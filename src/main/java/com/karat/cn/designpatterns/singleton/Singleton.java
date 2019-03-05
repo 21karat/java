@@ -10,6 +10,7 @@ public class Singleton {
 	
 	private Singleton(){}
 	
+	@SuppressWarnings("unused")
 	private static Singleton getInstance(){
 		//先检查实例是否存在,如果不存在才进入下面的同步块
 		if(instance==null){

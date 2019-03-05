@@ -11,7 +11,6 @@ public class Person implements Cloneable{
 	
 	private Son son;
 	
-	
 	public Person() {
 		super();
 	}
@@ -45,7 +44,6 @@ public class Person implements Cloneable{
 		return super.clone();
 	}*/
 
-
 	static class Son{
 		
 		private String sonName;
@@ -71,7 +69,6 @@ public class Person implements Cloneable{
 		public String toString() {
 			return "Son [sonName=" + sonName + "]";
 		}
-		
 	}
 	
 	public static void main(String args[]) throws CloneNotSupportedException{

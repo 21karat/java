@@ -9,8 +9,8 @@ import java.io.Serializable;
 /**
  * 将对象序列化然后反序列化实现深copy
  * @author 开发
- *
  */
+@SuppressWarnings("serial")
 public class Person implements Serializable{
 
 	private String name;
@@ -49,6 +49,7 @@ public class Person implements Serializable{
 		return "Person [name=" + name + ", son=" + son + "]";
 	}
 
+	
 	static class Son implements Serializable{
 		
 		private String sonName;
