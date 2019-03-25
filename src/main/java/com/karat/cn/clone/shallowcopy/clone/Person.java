@@ -1,24 +1,18 @@
-package com.karat.cn.shallowcopy.copy;
+package com.karat.cn.clone.shallowcopy.clone;
+
 /**
- * 自定义构造函数实现浅拷贝
+ * 自带的copy(clone()方法)实现浅拷贝
  * @author 开发
  *
  */
-public class Person {
+public class Person implements Cloneable{
 
 	private String name;
 	
 	private Son son;
 	
-	
 	public Person() {
 		super();
-	}
-	
-	//自定义构造函数实现拷贝
-	public Person(Person person){
-		this.name=person.name;//值传递
-		this.son=person.son;//引用传递
 	}
 	
 	public Person(String name, Son son) {
@@ -44,9 +38,14 @@ public class Person {
 	public String toString() {
 		return "Person [name=" + name + ", son=" + son + "]";
 	}
-
+	
+	/*@Override
+	protected Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}*/
 
 	static class Son{
+		
 		private String sonName;
 
 		public Son() {
@@ -72,14 +71,15 @@ public class Person {
 		}
 	}
 	
-	public static void main(String args[]){
+	public static void main(String args[]) throws CloneNotSupportedException{
 		Son son=new Son("小明");
 		Person person1=new Person("小红",son);
-		//通过自定义构造函数实现copy
-		Person person2=new Person(person1);//"小红"属于值传递,son属于引用传递,修改son值都会变,修改"小红",person1中改变而person2中不变
-		person1.setName("小花");//修改值传递(值)
-		person1.getSon().setSonName("小强");//修改引用传递(值)
-		System.out.println("person1"+person1);
-		System.out.println("person2"+person2);
+		Person person2=(Person)person1.clone();//自带的copy实现浅拷贝
+		
+		person2.setName("小强");
+		person2.getSon().setSonName("小乔");//修改Son中小明为小乔,因为son拷贝的是引用,所以改变引用值,其它全变
+		
+		System.out.println(person1);
+		System.out.println(person2);
 	}
 }

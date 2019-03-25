@@ -1,4 +1,4 @@
-package com.karat.cn.deepcopy.clone;
+package com.karat.cn.clone.deepcopy.clone;
 /**
  * 通过clone方法实现深度copy
  * 

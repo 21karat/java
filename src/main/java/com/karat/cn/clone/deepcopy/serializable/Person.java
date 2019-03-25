@@ -1,4 +1,4 @@
-package com.karat.cn.deepcopy.serializable;
+package com.karat.cn.clone.deepcopy.serializable;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
