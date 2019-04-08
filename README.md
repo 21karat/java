@@ -9,3 +9,7 @@
 * 3.IO流对文件的读写
 * 4.对象序列化与反序列化
 * 5.线程相关
+* 6.代理模式
+   * [静态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/staticpro)
+   * [JDK动态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/jdk)
+   * [CGLIB动态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/cglib)
