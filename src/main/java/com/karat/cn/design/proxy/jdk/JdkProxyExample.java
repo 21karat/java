@@ -3,20 +3,25 @@ package com.karat.cn.design.proxy.jdk;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-
+/**
+ * 在程序运行期间根据需要动态创建代理类及其实例来完成具体的功能。
+ * @author 开发
+ *
+ */
 public class JdkProxyExample implements InvocationHandler{
 	//真实对象
 	private Object target=null;
 	
 	/**
 	 * 建立代理对象与真实对象之间的代理关系
-	 * @param target 真实对象
-	 * @return 代理对象
+	 * @param target 入参传的是一个真实对象
+	 * @return 返回一个代理对象
 	 */
 	public Object bind(Object target) {
 		this.target=target;
 		//生成代理对象
-		return Proxy.newProxyInstance(target.getClass().getClassLoader(),
+		return Proxy.newProxyInstance(
+				target.getClass().getClassLoader(),
 				target.getClass().getInterfaces(), this);
 	}
 	/**

@@ -1,4 +1,4 @@
-package com.karat.cn.designpatterns.singleton;
+package com.karat.cn.design.singleton;
 /**
  * 静态内部类单列
  * @author 开发

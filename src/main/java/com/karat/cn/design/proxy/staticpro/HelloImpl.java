@@ -1,4 +1,4 @@
-package com.karat.cn.design.proxy.jdk;
+package com.karat.cn.design.proxy.staticpro;
 
 public class HelloImpl implements Hello{
 
@@ -11,7 +11,7 @@ public class HelloImpl implements Hello{
 	@Override
 	public void pay() {
 		// TODO Auto-generated method stub
-		System.out.println("玩！动作");
+		System.out.println("hello");
 	}
 
 }

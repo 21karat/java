@@ -1,4 +1,4 @@
-package com.karat.cn.designpatterns.singleton;
+package com.karat.cn.design.singleton;
 /**
  * 双重检查加锁
  * @author 开发

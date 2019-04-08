@@ -1,4 +1,4 @@
-package com.karat.cn.designpatterns.singleton;
+package com.karat.cn.design.singleton;
 /**
  * 懒汉式单例类
  * @author 开发

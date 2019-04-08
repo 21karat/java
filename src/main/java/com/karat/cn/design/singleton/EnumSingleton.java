@@ -1,4 +1,4 @@
-package com.karat.cn.designpatterns.enumsingleton;
+package com.karat.cn.design.singleton;
 /**
  * 枚举单列
  * @author 开发
