@@ -8,7 +8,7 @@ public class TestCglib {
 	
 	public static void main(String args[]){  
 		CglibProxyExample s=new CglibProxyExample();  	
-		HelloService s1=(HelloService)s.getInstance(new HelloService());  
+		HelloService s1=(HelloService)s.getInstance(HelloService.class);  
         s1.say(); 
     }    
 }
