@@ -13,3 +13,5 @@
    * [静态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/staticpro)
    * [JDK动态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/jdk)
    * [CGLIB动态代理](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/cglib)
+   * [封装JDK代理的拦截器模式](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/proxy/interceptor)
+* 7.[观察者模式](https://github.com/21karat/java/tree/master/src/main/java/com/karat/cn/design/observer)
