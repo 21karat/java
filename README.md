@@ -1,4 +1,7 @@
 ## JavaDemo
+![概览](https://github.com/21karat/java/blob/master/src/main/resources/Java.png) 
+
+
 * 1.浅拷贝，深拷贝
 * 2.单列模式
    * [饿汉式](https://github.com/21karat/java/blob/master/src/main/java/com/karat/cn/designpatterns/singleton/EagerSingleton.java)
